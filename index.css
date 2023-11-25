@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  width: 100%;
+  padding-top: 4rem;
+  position: absolute;
+}
+
+h1 {
+  margin-top: 1 rem auto;
+  text-align: center;
+}
+
+#form {
+  display: flex;
+  flex-direction:column;
+  padding: 2rem 3rem 3rem;
+  text-align: center;
+  align-items:stretch;
+  border:darkslategrey;
+}
+
+.edit-number:focus {
+  outline: none;
+  border: 2px solid blue;
+}
+.edit-name:focus {
+  outline: none;
+  border: 2px solid blue;
+}
+
+.form-input:focus {
+  outline: none;
+  border: 2px solid blue;
+}
+
+#list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.column {
+  width: 100%;
+}
+
+
+.form-info {
+  display: none;
+}
+
+.delete-btn {
+  width: 2rem;
+  height: 2rem;
+}
+
+.edit-btn {
+  width: 2rem;
+  height: 2rem;
+}
+
+.show {
+  display: block;
+}
+
+.correct:focus, .correct {
+  border: 2px solid rgb(16, 231, 16);
+}
+
+.invalid:focus, .invalid {
+  border: 2px solid red;
+}
+
+@media (min-width: 600px) {
+  .column {
+    width: 50%;
+  }
+}
